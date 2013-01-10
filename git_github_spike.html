@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+
+<title>Git/GitHub Spike</title>
+
+<script>
+
+var classMembers = new Array();
+var testThis = "Test global variable. <br />\n";
+
+function testAndShowResults()
+{
+    var testFailed = false;
+
+    // STEP 1:  ADD YOUR NAME TO EXPECTED RESULTS.
+    //          RUN PROGRAM, WHICH SHOULD REPORT THAT TEST FAILED.
+
+    var expectedResults = new Array();
+    expectedResults.push("Alyce Brady");
+    // EXAMPLE: expectedResults.push("Charlie Brown");
+
+    for ( var i = 0; i < expectedResults.length; i++ )
+    {
+        if ( classMembers.indexOf(expectedResults[i]) == -1 )
+        {
+            testFailed = true;
+        }
+    }
+
+    var resultArea = document.getElementById("testResults");
+    resultArea.innerHTML += "Test " +
+        ( testFailed ? "Failed" : "Succeeded" ) + "\n";
+
+    var expectedResultsArea = document.getElementById("expectedResults");
+    for ( var i = 0; i < expectedResults.length; i++ )
+    {
+        expectedResultsArea.innerHTML += expectedResults[i] + "<br />\n";
+    }
+    var actualResultsArea = document.getElementById("actualResults");
+    for ( var i = 0; i < classMembers.length; i++ )
+    {
+        actualResultsArea.innerHTML += classMembers[i] + "<br />\n";
+    }
+}
+
+function init_classMembers()
+{
+
+    // STEP 2:  ADD YOUR NAME TO CLASS MEMBERS ARRAY.
+    //          RUN PROGRAM, WHICH SHOULD REPORT THAT TEST SUCCEEDED.
+
+    classMembers.push("Alyce Brady");
+}
+
+</script>
+
+</head>
+
+<body onload="init_classMembers()">
+
+<h1>Git / GitHub Spike</h1>
+
+<p>
+<i>Note: this spike uses the JavaScript <span
+        class="code">indexOf</span> function for arrays, which is not
+    supported in Internet Explorer 8 and earlier according to
+    <a href="http://www.w3schools.com/jsref/jsref_indexof_array.asp">W3
+        Schools</a>.</i>
+</p>
+
+<form>
+    <p>
+    <input type="button" name="test" value="Run Test"
+        onclick="testAndShowResults();" />
+    </p>
+</form>
+
+<p id="testResults">
+<strong>Test Results:</strong> 
+</p>
+
+<blockquote>
+    <table>
+        <tr><th>Expected Results</th> <th width="10%">&nbsp;</th>
+            <th>Actual Results</th></tr>
+        <tr><td id="expectedResults" valign="top"></td> <td>&nbsp;</td>
+            <td id="actualResults" valign="top"></td></tr>
+    </table>
+</blockquote>
+
+</body>
+</html>

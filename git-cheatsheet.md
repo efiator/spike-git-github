@@ -1,18 +1,17 @@
-
-Getting Help
+## Getting Help #
 
 Three alternatives to getting the manual page (manpage) for any Git command:
     $ git help <verb>
     $ git <verb> --help
     $ man git-<verb>
 
-Updating Git:
+## Updating Git: #
 
 If you already have Git installed, you can get the latest development
 version via Git itself:
     git clone https://github.com/git/git.git
 
-Creating a repository:
+## Creating a repository: #
     For an existing project:
         Go to project's directory
         git init  (then do add's and commit)

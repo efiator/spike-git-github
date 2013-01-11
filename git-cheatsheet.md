@@ -1,9 +1,9 @@
 ## Getting Help #
 
 Three alternatives to getting the manual page (manpage) for any Git command:
-    $ git help <verb>
-    $ git <verb> --help
-    $ man git-<verb>
+    $ git help <verb>  
+    $ git <verb> --help  
+    $ man git-<verb>  
 
 ## Updating Git: #
 
@@ -24,7 +24,7 @@ If not a collaborator for the original repository, fork it first:
 >   Use Fork button on GitHub web page. [now have own copy on GitHub]
 >   `git clone git://github.com/myUserName/ramp.git` (or whatever)
 
-## Renaming files:  Do this using Git, not the UNIX mv command! #
+## Renaming files:  Do this using Git, not the UNIX `mv` command! #
 
 To rename or move a file:
     git mv filename newFilename
@@ -52,6 +52,7 @@ To commit:
 >  for best practices on commit messages.  See below for exec. summary.)
 >  [CHECK: Probably should NOT remove the comments that Git
 >  inserts, since it helps Git track what happened in each commit???]
+
 If all files to include in a commit are being tracked (i.e., there
 are files that have been "Changed but not updated" but no files that
 are untracked), then can wrap the add phase for modified files into
@@ -60,6 +61,7 @@ the commit:
 To "fix" a commit:
 >   make additional changes that should have been made before commit  
 >   `git commit --amend` (now have single, changed commit)
+
 (See git-scm book for additional Recording Changes topics, like
 skipping the staging area, removing files, and moving/renaming
 files and additional Undoing Things topics, like unstaging and

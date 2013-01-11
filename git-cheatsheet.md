@@ -14,7 +14,7 @@ version via Git itself:
 ## Creating a repository: #
 
 For an existing project:
-    Go to project's directory
+>    Go to project's directory
     git init  (then do add's and commit)
 For an existing repository:
 >    `git clone git://github.com/schacon/grit.git`  (or whatever)
@@ -44,9 +44,9 @@ To see what has been staged:
 To see what has been changed BUT NOT STAGED:
     git diff
 To commit:
->    `git commit` (will put in editor for commit message)
->  OR
->    `git commit -m  "Story 182: Fix benchmarks for speed"`
+>    `git commit` (will put in editor for commit message)  
+>  OR  
+>    `git commit -m  "Story 182: Fix benchmarks for speed"`  
 >  (See
 >  <http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html>
 >  for best practices on commit messages.  See below for exec. summary.)
@@ -64,10 +64,10 @@ To "fix" a commit:
 skipping the staging area, removing files, and moving/renaming
 files and additional Undoing Things topics, like unstaging and
 unmodifying files.)
-> __Executive summary of Tim Pope's (tbaggery) recommendations:__
->   Short (<=50 char, preferably) capitalized summary on 1st line followed
->   by blank line; use present tense imperative in summary ('Fix bug' not
->   'Fixed bug'); wrap lines at around 72 chars.
+> __Executive summary of Tim Pope's (tbaggery) recommendations:__  
+>>   Short (<=50 char, preferably) capitalized summary on 1st line followed
+>>   by blank line; use present tense imperative in summary ('Fix bug' not
+>>   'Fixed bug'); wrap lines at around 72 chars.
 
 ## Forking -- Creating your own version of someone else's project: #
 
@@ -108,15 +108,16 @@ time.  Finish by doing a `git add` for each resolved file.
     git tag -s v1.5 -m 'my signed 1.5 tag'
 
 ## When ready #
+
 Check out useful Tips and Tricks (bash completion, aliases):
-    http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks
+>   <http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks>
 
 
 Sources:
-  http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup
-  http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
-  http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository
-  http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-  https://help.github.com/articles/fork-a-repo
-  http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is
-  https://github.com/rapid7/metasploit-framework/wiki/Git-cheatsheet (for git stash)
+>  <http://git-scm.com/book/en/Getting-Started-First-Time-Git-Setup>  
+>  <http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository>  
+>  <http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository>  
+>  <http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html>  
+>  <https://help.github.com/articles/fork-a-repo>  
+>  <http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is>  
+>  <https://github.com/rapid7/metasploit-framework/wiki/Git-cheatsheet (for git stash)>  
